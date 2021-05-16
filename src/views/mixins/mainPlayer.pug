@@ -1,0 +1,11 @@
+mixin mainPlayer(video)
+    .mainPlayer 
+        img(src=video.poster, controls="true")
+        .mainPlayer__info 
+            .mainPlayer__info__column
+                h1=video.title 
+            .mainPlayer__info__column
+                p=video.summary 
+            .mainPlayer__info__column
+                button.fas.fa-play   재생
+                button.fas.fa-exclamation   상세정보

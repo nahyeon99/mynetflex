@@ -13,7 +13,7 @@
 ## views
 
 - [x] welcome
-- [ ] home
+- [x] home
 - [x] login
 - [x] change password
 - [x] join
@@ -23,12 +23,12 @@
 - [ ] movie
 - [x] contactus
 - [x] videoDetail
-- [ ] videoPlayer
+- [x] videoPlayer
 
 ## views/ mixins & partials & layouts
 
 - [x] partials (statusBar)
-- [ ] videoBlock(genres 별 column 라인)
-- [ ] home화면 videoPlayer 부분
+- [x] videoBlock(genres 별 column 라인)
+- [x] home화면 videoPlayer 부분
 - [ ] videoPlayer
 - [ ] layouts/ home화면

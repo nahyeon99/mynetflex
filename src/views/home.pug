@@ -1,4 +1,10 @@
 extends layouts/main 
+include mixins/mainPlayer
+include mixins/videoBlock
 
 block content 
-    
+    +mainPlayer(video)
+    each video in db
+        +videoBlock(video)
+    else
+        li Sorry, Nothing Found.

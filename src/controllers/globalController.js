@@ -1,8 +1,11 @@
+import db from "../db";
+
 export const welcome = (req, res) => {
   res.render("welcome", { pageTitle: "Welcome" });
 };
 export const home = (req, res) => {
-  res.render("home", { pageTitle: "Home" });
+  const video = db[0];
+  res.render("home", { pageTitle: "Home", db, video });
 };
 export const join = (req, res) => {
   res.render("join", { pageTitle: "Join" });
