@@ -1,30 +1,30 @@
 export const welcome = (req, res) => {
-  res.send("welcome");
+  res.render("welcome", { pageTitle: "Welcome" });
 };
 export const home = (req, res) => {
-  res.send("home");
+  res.render("home", { pageTitle: "Home" });
 };
 export const login = (req, res) => {
-  res.send("login");
+  res.render("login", { pageTitle: "Login" });
 };
 export const logout = (req, res) => {
-  res.send("logout");
+  res.redirect(routes.welcome);
 };
 export const search = (req, res) => {
-  res.send("search");
+  res.render("search", { pageTitle: "search" });
 };
 export const myList = (req, res) => {
-  res.send("myList");
+  res.render("myList", { pageTitle: "my list" });
 };
 export const tv = (req, res) => {
-  res.send("tv");
+  res.render("tv", { pageTitle: "TV" });
 };
 export const movie = (req, res) => {
-  res.send("movie");
+  res.render("movie", { pageTitle: "MOVIE" });
 };
 export const contactus = (req, res) => {
-  res.send("contactus");
+  res.render("contactus", { pageTitle: "Contact Us" });
 };
 export const changePassword = (req, res) => {
-  res.send("changePassword");
+  res.render("changePassword", { pageTitle: "Change Password" });
 };
