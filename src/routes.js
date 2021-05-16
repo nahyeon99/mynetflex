@@ -2,6 +2,7 @@
 
 const WELCOME = "/";
 const HOME = "/home";
+const JOIN = "/join";
 const LOGIN = "/login";
 const LOGOUT = "/logout";
 const SEARCH = "/search";
@@ -9,7 +10,7 @@ const MY_LIST = "/my-list";
 const GENRE_TV = "/tv";
 const GENRE_MOVIE = "/movie";
 const CONTACTUS = "/contactus";
-const CHANGEPASSWORD = "/changePassword";
+const CHANGEPASSWORD = "/change-password";
 
 // Video Router
 
@@ -20,6 +21,7 @@ const VIDEO_PLAY = "/play/:id(\\d+)";
 const routes = {
   welcome: WELCOME,
   home: HOME,
+  join: JOIN,
   login: LOGIN,
   logout: LOGOUT,
   search: SEARCH,

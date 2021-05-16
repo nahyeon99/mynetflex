@@ -28,7 +28,7 @@
 
 ## views/ mixins & partials & layouts
 
-- [ ] partials (statusBar(2 types))
+- [ ] partials (statusBar)
 - [ ] videoBlock(genres 별 column 라인)
 - [ ] home화면 videoPlayer 부분
 - [ ] videoPlayer

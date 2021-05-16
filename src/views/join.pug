@@ -1,15 +1,14 @@
 extends layouts/welcomeMain
 
 block content 
-    .form-container.login-container 
+    .form-container.join-container 
         .form-container__column
-            h1 로그인
+            h1 회원가입
         .form-container__column
             form(action=routes.login, method="post")
                 input(type="text" name="email", placeholder="Email", required="true")
                 input(type="text", name="password", placeholder="Password", required="true")
-                input(type="submit", value="로그인")
+                input(type="text", name="password1", placeholder="Verify Password", required="true")
+                input(type="submit", value="가입하기")
         .form-container__column
             include partials/socialLogin
-            span NETFLEX 회원이 아니신가요? 
-            a(href=routes.join) 지금 가입하세요.

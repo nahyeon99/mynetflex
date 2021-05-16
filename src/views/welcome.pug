@@ -1,10 +1,17 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title #{siteName} | #{pageTitle}
-    body 
-        p 
-            | Welcome
+extends layouts/welcomeMain
+
+block content 
+    .welcome-container 
+        .welcome-container__column
+            |영화, TV 프로그램을 무제한으로
+        .welcome-container__column
+            |다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.
+        .welcome-container__column
+            |시청할 준비가 되셨나요? 멤버쉽을 등록하거나 재시작하려면 이메일 주소를 입력하세요. 
+        .welcome-container__column.welcome-container__column__btns
+            .welcome__column__btn
+                a(href=routes.join)
+                    button 회원가입
+            .welcome__column__btn
+                a(href=routes.home)
+                    button 구경하기
