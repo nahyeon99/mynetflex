@@ -21,7 +21,7 @@
 - [ ] my-list
 - [ ] tv
 - [ ] movie
-- [ ] contactus
+- [x] contactus
 - [ ] videoDetail
 - [ ] videoPlayer
 

@@ -8,6 +8,7 @@ html(lang="en")
         link(rel="stylesheet", href="https://unpkg.com/mvp.css")
         title #{siteName} | #{pageTitle}
     body 
-        header #{siteName}
+        header
+            a(href=routes.welcome) #{siteName}
         main
             block content
