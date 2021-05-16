@@ -2,10 +2,11 @@
 
 ## pages
 
-- [ ] app.js
-- [ ] routers
+- [x] Server.js 
+- [x] app.js
+- [x] routers
+- [x] middlewares
 - [ ] controllers
-- [ ] middlewares
 - [ ] views
 - [ ] db
 
@@ -13,16 +14,17 @@
 
 - [ ] welcome
 - [ ] home
-- [ ] videoDetail
-- [ ] videoPlayer
 - [ ] login
 - [ ] logout
-- [ ] my-list
-- [ ] genre/tv
-- [ ] genre/move
 - [ ] search
-- [ ] changePassword
+- [ ] my-list
+- [ ] tv
+- [ ] movie
 - [ ] contactus
+- [ ] changePassword
+
+- [ ] videoDetail
+- [ ] videoPlayer
 
 ## views/ mixins & partials & layouts
 
