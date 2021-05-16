@@ -12,23 +12,22 @@
 
 ## views
 
-- [ ] welcome
+- [x] welcome
 - [ ] home
-- [ ] login
-- [ ] logout
+- [x] login
+- [x] change password
+- [x] join
 - [ ] search
 - [ ] my-list
 - [ ] tv
 - [ ] movie
 - [ ] contactus
-- [ ] changePassword
-
 - [ ] videoDetail
 - [ ] videoPlayer
 
 ## views/ mixins & partials & layouts
 
-- [ ] partials (statusBar)
+- [x] partials (statusBar)
 - [ ] videoBlock(genres 별 column 라인)
 - [ ] home화면 videoPlayer 부분
 - [ ] videoPlayer
