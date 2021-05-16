@@ -1,5 +1,11 @@
+import db from "../db";
+
 export const videoDetail = (req, res) => {
-  res.send("videoDetail");
+  const {
+    params: { id },
+  } = req;
+  const video = db[id];
+  res.render("videoDetail", { pageTitle: `${video.title}`, video });
 };
 
 export const videoPlay = (req, res) => {

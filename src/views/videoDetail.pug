@@ -1,0 +1,17 @@
+extends layouts/welcomeMain 
+
+block content 
+    .videoDetail
+        .videoDetail__column
+            img(src="#", controls="true")
+        .videoDetail__column
+            .videoDetail__column__column
+                span=video.title
+                span.fas.fa-play 
+                span.fas.fa-check-circle
+            .videoDetail__column__column
+                span=video.year
+                span #{video.genre}
+                span=video.rating 
+            .videoDetail__column__column
+                span #{video.summary}

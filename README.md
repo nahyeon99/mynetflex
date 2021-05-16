@@ -22,7 +22,7 @@
 - [ ] tv
 - [ ] movie
 - [x] contactus
-- [ ] videoDetail
+- [x] videoDetail
 - [ ] videoPlayer
 
 ## views/ mixins & partials & layouts
