@@ -1,0 +1,18 @@
+{
+  "name": "mynetflix",
+  "version": "1.0.0",
+  "description": "making my Netflix website using Vanilla and Node JS",
+  "main": "app.js",
+  "author": "nahyeon and ssong",
+  "license": "ISC",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/server.js --delay 2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
