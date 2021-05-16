@@ -20,7 +20,7 @@ export const search = (req, res) => {
   res.render("search", { pageTitle: "search" });
 };
 export const myList = (req, res) => {
-  res.render("myList", { pageTitle: "my list" });
+  res.render("myList", { pageTitle: "my list", db });
 };
 export const tv = (req, res) => {
   res.render("tv", { pageTitle: "TV" });

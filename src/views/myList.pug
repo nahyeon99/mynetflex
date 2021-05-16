@@ -1,0 +1,8 @@
+extends layouts/main 
+
+block content 
+    .myList 
+        h1 내가 찜한 콘텐츠 
+        .myList__posters
+            each video in db
+                img(src=video.poster, controls="true")

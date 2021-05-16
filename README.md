@@ -18,7 +18,7 @@
 - [x] change password
 - [x] join
 - [ ] search
-- [ ] my-list
+- [x] my-list
 - [ ] tv
 - [ ] movie
 - [x] contactus
@@ -31,4 +31,4 @@
 - [x] videoBlock(genres 별 column 라인)
 - [x] home화면 videoPlayer 부분
 - [ ] videoPlayer
-- [ ] layouts/ home화면
+- [x] layouts/ home화면
