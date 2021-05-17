@@ -4,8 +4,7 @@ export const videoDetail = (req, res) => {
   const {
     params: { id },
   } = req;
-  const video = db[id];
-  res.render("videoDetail", { pageTitle: `${video.title}`, video });
+  res.render("videoDetail", { pageTitle: `${video.title}` });
 };
 
 export const videoPlay = (req, res) => {
