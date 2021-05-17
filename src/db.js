@@ -1,4 +1,4 @@
-let db = [
+const db = [
   {
     title: "First Video",
     rating: 5,

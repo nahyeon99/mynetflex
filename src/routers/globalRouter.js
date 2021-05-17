@@ -1,14 +1,17 @@
 import express from "express";
 import routes from "../routes";
 import {
-  changePassword,
   contactus,
+  getChangePassword,
+  getJoin,
+  getLogin,
   home,
-  join,
-  login,
   logout,
   movie,
   myList,
+  postChangePassword,
+  postJoin,
+  postLogin,
   search,
   tv,
   welcome,
@@ -18,10 +21,15 @@ const globalRouter = express.Router();
 
 globalRouter.get(routes.welcome, welcome);
 globalRouter.get(routes.home, home);
-globalRouter.get(routes.join, join);
-globalRouter.get(routes.login, login);
+
+globalRouter.route(routes.join).get(getJoin).post(postJoin);
+globalRouter.route(routes.login).get(getLogin).post(postLogin);
 globalRouter.get(routes.logout, logout);
-globalRouter.get(routes.changePassword, changePassword);
+globalRouter
+  .route(routes.changePassword)
+  .get(getChangePassword)
+  .post(postChangePassword);
+
 globalRouter.get(routes.search, search);
 globalRouter.get(routes.myList, myList);
 globalRouter.get(routes.tv, tv);

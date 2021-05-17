@@ -7,12 +7,21 @@ export const home = (req, res) => {
   const video = db[0];
   res.render("home", { pageTitle: "Home", db, video });
 };
-export const join = (req, res) => {
-  res.render("join", { pageTitle: "Join" });
+export const getJoin = (req, res) => {
+  return res.render("join", { pageTitle: "Join" });
 };
-export const login = (req, res) => {
-  res.render("login", { pageTitle: "Login" });
+
+export const postJoin = (req, res) => {
+  return res.redirect(routes.home);
 };
+
+export const getLogin = (req, res) => {
+  return res.render("login", { pageTitle: "Login" });
+};
+export const postLogin = (req, res) => {
+  return res.redirect(routes.home);
+};
+
 export const logout = (req, res) => {
   res.redirect(routes.welcome);
 };
@@ -31,6 +40,10 @@ export const movie = (req, res) => {
 export const contactus = (req, res) => {
   res.render("contactus", { pageTitle: "Contact Us" });
 };
-export const changePassword = (req, res) => {
-  res.render("changePassword", { pageTitle: "Change Password" });
+
+export const getChangePassword = (req, res) => {
+  return res.render("changePassword", { pageTitle: "Change Password" });
+};
+export const postChangePassword = (req, res) => {
+  return res.redirect(routes.home);
 };
