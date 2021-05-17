@@ -3,8 +3,8 @@ include mixins/mainPlayer
 include mixins/videoBlock
 
 block content 
-    +mainPlayer(video)
-    each video in db
-        +videoBlock(video)
+//- +mainPlayer(video)
+    each item in videos
+        +videoBlock(item)
     else
         li Sorry, Nothing Found.

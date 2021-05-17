@@ -1,11 +1,16 @@
 import db from "../db";
+import Video from "../models/Video";
 
 export const welcome = (req, res) => {
   res.render("welcome", { pageTitle: "Welcome" });
 };
-export const home = (req, res) => {
-  const video = db[0];
-  res.render("home", { pageTitle: "Home", db, video });
+export const home = async (req, res) => {
+  const videos = await Video.find({});
+  let video;
+  if (videos) {
+    video = videos[0];
+  }
+  res.render("home", { pageTitle: "Home", videos, video });
 };
 export const getJoin = (req, res) => {
   return res.render("join", { pageTitle: "Join" });
